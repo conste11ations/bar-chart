@@ -1,9 +1,30 @@
 {
   "name": "stretch-project-1",
   "version": "0.0.0",
-  "description": "",
+  "description": "building a library that will allow other developers to generate bar charts on their web pages - HTML/CSS/Javascript/jQuery",
   "devDependencies": {
     "eslint": "^3.19.0",
-    "eslint-config-lighthouselabs": "lighthouse-labs/eslint-config-lighthouselabs"
-  }
+    "eslint-config-lighthouselabs": "github:lighthouse-labs/eslint-config-lighthouselabs",
+    "eslint-config-standard": "^14.1.1",
+    "eslint-plugin-import": "^2.20.1",
+    "eslint-plugin-node": "^11.0.0",
+    "eslint-plugin-promise": "^4.2.1",
+    "eslint-plugin-react": "^7.19.0",
+    "eslint-plugin-standard": "^4.0.1"
+  },
+  "main": ".eslintrc.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/conste11ations/bar-chart.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/conste11ations/bar-chart/issues"
+  },
+  "homepage": "https://github.com/conste11ations/bar-chart#readme"
 }
