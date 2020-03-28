@@ -4,33 +4,48 @@
     <meta charset="utf-8">
     <title>Demo</title>
     <title></title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>jQuery UI Progressbar - Default functionality</title>
+ <!--   <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+    <link rel="stylesheet" href="/resources/demos/style.css">
+ -->
+    <script src="jquery-3.4.1.js"></script>
+
     <style>
       a.test {
           font-weight: bold;
       }
-      </style>
+      #div1 {
+          height: 100px;
+          width: 300px;
+          padding: 10px;
+          margin: 3px;
+          border: 1px solid blue;
+          background-color: lightblue;
+      }
+    </style>
 </head>
+
 <body>
-    <a href="http://jquery.com/">jQuery</a>
-    <script src="jquery-3.4.1.js"></script>
-
+    <a href="http://jquery.com/">jQuery!</a>
     <script>
-
-          window.onload = function() {
-          alert( "welcome" );
-          };
-
-          $( document ).ready(function() {
-            $( "a" ).click(function( event ) {
-
-              alert( "As you can see, the link no longer took you to jquery.com" );
-              event.preventDefault();
-            });
-          });
-
-          $( "a" ).addClass( "test" );
-
-
+      $(document).ready(function(){
+        $("button").click(function(){
+          var txt = "";
+          txt += "Width of div: " + $("#div1").width() + "</br>";
+          txt += "Height of div: " + $("#div1").height();
+          $("#div1").html(txt);
+        });
+      });
+//          $( "a" ).addClass( "test" );
     </script>
+
+  <div id="div1"></div>
+  <br>
+  <button>Display dimensions of div</button>
+  <p>width() - returns the width of an element.</p>
+  <p>height() - returns the height of an element.</p>
+
 </body>
 </html>

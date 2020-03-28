@@ -5,6 +5,7 @@ module.exports = {
     },
 //    "extends": "eslint:recommended",
     "extends": "lighthouselabs",
+//     "extends": "eslint-config-lighthouselabs",
     "parserOptions": {
         "ecmaFeatures": {
             "experimentalObjectRestSpread": true,
